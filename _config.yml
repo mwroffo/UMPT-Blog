@@ -1,0 +1,63 @@
+# Site settings
+title: UMPT-Blog
+description: "The UMass Amherst Penetration Testing Club Blog"
+baseurl: ""
+url: ""
+
+# User settings
+username: UMass Pentest
+user_title: Lorem Ipsum - FrontEnd
+email: umasspentest@gmail.com
+twitter_username:
+github_username:  UMass-Pentest
+gplus_username:
+linkedin_public_url:
+disqus_username:
+profile_picture: https://avatars3.githubusercontent.com/u/33366941?s=200&v=4g
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+links:
+  section_1:
+    - title: home
+      url: /
+      key_trigger: 1
+    - title: our posts
+      url: /posts
+      key_trigger: 2
+    - title: series
+      url: /series
+      key_trigger: 3
+    - title: tags
+      url: /tags
+      key_trigger: 4
+    - title: about us
+      url: /about
+      key_trigger: 5
+  section_2:
+    - title: github
+      url: https://www.github.com/UMass-Pentest
+      new_tab: true
+      key_trigger: g
+    - title: search
+      url: ""
+      key_trigger: s #WARNING: search only works with "s"
+
+# projects in header index
+projects:
+  - name: invenio
+    url: https://github.com/UMass-Pentest/invenio
+
+# exclude node related stuff and old posts
+exclude: ['package.json', 'src', 'node_modules', 'old_posts']

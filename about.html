@@ -1,0 +1,18 @@
+---
+layout: minimal
+title: "About us"
+permalink: /about/index.html
+description: "Some description about the club..."
+---
+
+<img itemprop="image" class="img-rounded about_perfil" src=" https://avatars3.githubusercontent.com/u/33366941?s=200&v=4g" alt="Profile">
+
+<h2>Our projects</h2>
+
+<div class="aboutus">
+	<ul class="recent">
+		{% for project in site.projects %}
+	    	<li><a href="{{ project.url}}"><h3 class="project-name" itemprop="name">{{ project.name }}</h3></a></li>
+	    {% endfor %}
+	</ul>
+</div>
